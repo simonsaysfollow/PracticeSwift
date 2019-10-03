@@ -12,6 +12,9 @@
 		0272BBF7233314BE00333EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0272BBF5233314BE00333EC3 /* Main.storyboard */; };
 		0272BBF9233314C000333EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0272BBF8233314C000333EC3 /* Assets.xcassets */; };
 		0272BBFC233314C000333EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0272BBFA233314C000333EC3 /* LaunchScreen.storyboard */; };
+		0272BC0423341A1C00333EC3 /* CellItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272BC0323341A1C00333EC3 /* CellItemsTableViewCell.swift */; };
+		0272BC062334653D00333EC3 /* trah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272BC052334653D00333EC3 /* trah.swift */; };
+		0272BC082341853E00333EC3 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272BC072341853E00333EC3 /* Cells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		0272BBF8233314C000333EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0272BBFB233314C000333EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0272BBFD233314C000333EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0272BC0323341A1C00333EC3 /* CellItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellItemsTableViewCell.swift; sourceTree = "<group>"; };
+		0272BC052334653D00333EC3 /* trah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trah.swift; sourceTree = "<group>"; };
+		0272BC072341853E00333EC3 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				0272BBF8233314C000333EC3 /* Assets.xcassets */,
 				0272BBFA233314C000333EC3 /* LaunchScreen.storyboard */,
 				0272BBFD233314C000333EC3 /* Info.plist */,
+				0272BC0323341A1C00333EC3 /* CellItemsTableViewCell.swift */,
+				0272BC052334653D00333EC3 /* trah.swift */,
+				0272BC072341853E00333EC3 /* Cells.swift */,
 			);
 			path = DropDownPractice;
 			sourceTree = "<group>";
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0272BC062334653D00333EC3 /* trah.swift in Sources */,
 				0272BBF4233314BE00333EC3 /* ViewController.swift in Sources */,
 				0272BBF2233314BE00333EC3 /* AppDelegate.swift in Sources */,
+				0272BC0423341A1C00333EC3 /* CellItemsTableViewCell.swift in Sources */,
+				0272BC082341853E00333EC3 /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

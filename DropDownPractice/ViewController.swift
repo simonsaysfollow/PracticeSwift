@@ -12,7 +12,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var x: Int  = 0
+    var charlength: Int?  
     var count:Int = 5
     var check:Bool = false
     var whichTextField:Int!
@@ -46,7 +46,34 @@ class ViewController: UIViewController {
         whichTextField = textField.tag
         
         
-        if x <= 0 {
+   
+        if let charlength = charlength {
+            
+            if (passangerTable.cellForRow(at: IndexPath.init(row: 1, section: textField.tag)) != nil) {
+                print("checking on you")
+                passangerTable.beginUpdates()
+                
+                for item in 1...test.count {
+                    
+                    passangerTable.deleteRows(at: [NSIndexPath(row: item, section: textField.tag) as IndexPath], with: .automatic)
+                }
+                
+                passangerTable.endUpdates()
+                
+            }
+            
+            
+            if charlength > textField.text!.count {
+               
+                passangerTable.beginUpdates()
+                
+                for item in 1...test.count {
+                
+                passangerTable.deleteRows(at: [NSIndexPath(row: item, section: textField.tag) as IndexPath], with: .automatic)
+                }
+                
+                passangerTable.endUpdates()
+            }
         
             if textField.text!.count > 0 {
                 check = true
@@ -55,13 +82,15 @@ class ViewController: UIViewController {
                 
                 for item in 1...test.count {
 
-                    passangerTable.insertRows(at: [NSIndexPath(row: item, section: 0) as IndexPath], with: .automatic)
+                    passangerTable.insertRows(at: [NSIndexPath(row: item, section: textField.tag) as IndexPath], with: .automatic)
                    
                 }
                 
                 passangerTable.endUpdates()
                 
-            }else {
+            }
+            
+            if textField.text!.count == 0 {
                 
                 check = false
                 passangerTable.reloadData()
@@ -70,7 +99,7 @@ class ViewController: UIViewController {
         
         }
         
-        x=x+1
+       charlength = textField.text!.count
     }
     
     
